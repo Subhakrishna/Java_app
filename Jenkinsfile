@@ -100,7 +100,7 @@ pipeline{
             }
         }   
         stage('Docker Image Cleanup : DockerHub '){
-         when { expression {  params.action == 'create' } }
+         when { expression {  params.action == 'delete' } }
             steps{
                script{
                    
